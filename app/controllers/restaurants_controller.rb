@@ -14,7 +14,8 @@ class RestaurantsController < ApplicationController
       :phone_number => params[:id]
       )
     @response = client.search(request)
-    binding.pry
+
+
   end
 
   def new
@@ -30,7 +31,6 @@ class RestaurantsController < ApplicationController
              :radius =>params["restaurant"][:radius],
              :term => params["restaurant"][:term])
     @restaurants = client.search(request)
-
   render :index
   end
 end

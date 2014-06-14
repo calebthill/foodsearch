@@ -1,5 +1,25 @@
 /**= require bootstrap.min*/
 
-h2 {
-  color: gray;
+
+
+
+body {
+  background-image:url('city.png');
+  background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+
+.button {
+  color: black;
+}
+
+.row {
+  margin: 0px;
+  text-align: center;
 }
