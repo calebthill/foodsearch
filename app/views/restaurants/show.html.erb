@@ -1,13 +1,11 @@
-<h1><%= @response["businesses"][0]["name"] %></h1>
+<h1><%= @response["businesses"][0]["name"] %></h1><br>
 
 
+<h4>Phone:</h4>
 <p><%= @response["businesses"][0]["phone"] %></p>
-<p><%= @response["businesses"][0]["address1"] %></p>
-<p><%= @response["businesses"][0]["city"] %></p>
-<p><%= @response["businesses"][0]["state"] %></p>
-<p><%= @response["businesses"][0]["zip"] %></p>
-
-
-<br><br>
-
-<p><%= @response["businesses"][0]["avg_rating"] %></p>
+<br>
+<h4>Address:</h4>
+<p><%= @response["businesses"][0]["address1"] %> <%= @response["businesses"][0]["city"] %> <%= @response["businesses"][0]["state"] %> <%= @response["businesses"][0]["zip"] %></p>
+<br>
+<h4>Rating:</h4>
+<p> <%= @response["businesses"][0]["avg_rating"] %></p>
