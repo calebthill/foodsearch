@@ -1,4 +1,8 @@
-<h1><%= @response["businesses"][0]["name"] %></h1><br>
+<div class="row">
+  <div class="col-md-4 col-md-offset-4">
+    <h1><%= @response["businesses"][0]["name"] %></h1><br>
+  </div>
+</div>
 
 
 <h4>Phone:</h4>
@@ -9,3 +13,9 @@
 <br>
 <h4>Rating:</h4>
 <p> <%= @response["businesses"][0]["avg_rating"] %></p>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-4">
+<h3><a href="/restaurants/new">Search new</a></h3>
+</div>
+</div>
