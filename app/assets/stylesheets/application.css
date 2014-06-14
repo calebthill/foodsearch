@@ -24,3 +24,12 @@ body {
 a {
   color: white;
 }
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+  background-color: #FD8C26;
+  font-size: 1.2em;
+}
+
+input {
+  color: black;
+}

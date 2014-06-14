@@ -7,9 +7,22 @@
 
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body class="container">
+  <header class="page-header">
+      <ul class = "nav nav-pills">
+        <li class="active"><a href="/restaurants/new">Food Finder</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+  </header>
 
-<div class="container"> <%= yield %> </div>
+
+
+
+<%= yield %>
 
 </body>
 </html>
+
+
+
