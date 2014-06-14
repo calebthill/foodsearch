@@ -1,5 +1,5 @@
 <ul>
 <% @restaurants["businesses"].each do |business| %>
-<li><%= business["name"] %></li>
+<li><%= business["phone"] != nil ? ( link_to business["name"], restaurant_path(business["phone"]) ) : business["name"]  %></li>
 <% end %>
 </ul>
