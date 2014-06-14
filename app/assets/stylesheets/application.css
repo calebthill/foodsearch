@@ -2,7 +2,6 @@
 
 
 
-
 body {
 
   background: url(city.png) no-repeat center center fixed;
@@ -20,4 +19,8 @@ body {
 .row {
   margin: 0px;
   text-align: center;
+}
+
+a {
+  color: white;
 }
