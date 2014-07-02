@@ -12,8 +12,6 @@ class RestaurantsController < ApplicationController
       :phone_number => params[:id]
       )
     @response = client.search(request)
-
-
   end
 
   def new
