@@ -1,6 +1,7 @@
 class RestaurantsController < ApplicationController
   include Yelp::V1::Review::Request
-  include Yelp::V1::Phone::Request
+  #include Yelp::V1::Phone::Request
+  include Yelp::V2::Business::Request
 
   def index
 
@@ -8,9 +9,8 @@ class RestaurantsController < ApplicationController
 
   def show
     client = Yelp::Client.new
-    request = Number.new(
-      :phone_number => params[:id]
-      )
+    request = Id.new(
+    :yelp_business_id => params[:id])
     @response = client.search(request)
   end
 

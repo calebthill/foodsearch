@@ -1,16 +1,16 @@
 <div class="center-block jumbotron" center>
   <div class="container">
-    <h2><%= @response["businesses"][0]["name"] %></h2>
+    <h2><%= @response["name"] %></h2>
     <br>
     <h4>Phone:</h4>
-    <p><%= @response["businesses"][0]["phone"] %></p>
+    <p><%= @response["phone"] %></p>
     <br>
     <h4>Address:</h4>
-    <p><%= @response["businesses"][0]["address1"] %> <%= @response["businesses"][0]["city"] %>
-       <%= @response["businesses"][0]["state"] %> <%= @response["businesses"][0]["zip"] %></p>
+    <p><%= @response["location"]["address"][0] %> <%= @response["location"]["city"] %>
+       <%= @response["location"]["state_code"] %> <%= @response["location"]["postal_code"] %></p>
     <br>
     <h4>Rating:</h4>
-    <p> <%= @response["businesses"][0]["avg_rating"] %></p>
+    <p> <%= @response["rating"] %></p>
   </div>
 </div>
 

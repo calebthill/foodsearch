@@ -4,7 +4,7 @@
   <% @restaurants["businesses"].each do |business| %>
   <li>
   <% if business["phone"].nil? && business["phone"].empty? %>
-    <%= link_to business["name"], restaurant_path(business["phone"]) %>
+    <%= link_to business["name"], restaurant_path(business["id"]) %>
   <% else %>
     <%= link_to business["name"], restaurant_path(business["id"]) %>
   <% end %>
