@@ -26,8 +26,7 @@ class RestaurantsController < ApplicationController
              :state => params["restaurant"][:state],
              :radius =>params["restaurant"][:radius],
              :term => params["restaurant"][:term])
-    binding.pry
     @restaurants = client.search(request)
-  render :index
+    render :index
   end
 end
