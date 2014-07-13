@@ -1,6 +1,5 @@
 class RestaurantsController < ApplicationController
   include Yelp::V1::Review::Request
-  #include Yelp::V1::Phone::Request
   include Yelp::V2::Business::Request
 
   def index
