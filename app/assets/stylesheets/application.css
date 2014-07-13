@@ -3,8 +3,7 @@
 
 
 body {
-
-  background: url(city.png) no-repeat center center fixed;
+   background: url(city.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -33,3 +32,11 @@ a {
 input {
   color: black;
 }
+
+.jumbotron {
+   background: rgb(200, 54, 54); /* This is for ie8 and below */
+   background: rgba(100, 56, 54, 0.5);
+   width: 400px;
+}
+
+

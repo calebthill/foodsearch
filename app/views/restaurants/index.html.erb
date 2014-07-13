@@ -1,7 +1,9 @@
 <h1> Results </h1>
 
 <ul>
-<% @restaurants["businesses"].each do |business| %>
-<li><%= business["phone"] != nil ? ( link_to business["name"], restaurant_path(business["phone"]) ) : business["name"]  %></li>
-<% end %>
+  <% @restaurants["businesses"].each do |business| %>
+  <li>
+    <%= link_to business["name"], restaurant_path(business["id"]) %>
+  </li>
+  <% end %>
 </ul>

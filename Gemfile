@@ -32,6 +32,9 @@ group :test, :development do
   gem 'pry-rails'
 end
 
+gem 'bootstrap_forms'
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

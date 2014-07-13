@@ -4,30 +4,29 @@
   </div>
 </div>
 
-<div class="row">
-  <div class="col-md-4 col-md-offset-4">
-<%= form_for @restaurant_search do |f| %>
-<%= f.label :address %>
-<%= f.text_field :address %> <br>
+<div class="center-block jumbotron">
+  <div class="container">
+  <%= form_for @restaurant_search do |f| %>
+    <div class="form-group">
+    <%= f.label :address %>
+    <%= f.text_field :address, class: "form-control" %> <br>
 
-<%= f.label :city %>
-<%= f.text_field :city %> <br>
+    <%= f.label :city %>
+    <%= f.text_field :city, class: "form-control" %> <br>
 
-<%= f.label :state %>
-<%= f.text_field :state %> <br>
+    <%= f.label :state %>
+    <%= f.text_field :state, class: "form-control" %> <br>
 
-<%= f.label :miles_away %>
-<%= f.text_field :radius %> <br>
+    <%= f.label :miles_away %>
+    <%= f.text_field :radius, class: "form-control" %> <br>
 
-<%= f.label :food_type  %>
-<%= f.text_field :term %> <br>
+    <%= f.label :food_type  %>
+    <%= f.text_field :term, class: "form-control" %> <br><br>
 
-<div class="button"><%= f.submit "Search Restaurants" %></div>
-<% end %>
+    <div><%= f.submit "Search Restaurants", class: "btn btn-default" %></div>
+  <% end %>
+  </div>
 </div>
-</div>
-
-
 
 
 
