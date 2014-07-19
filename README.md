@@ -1,28 +1,7 @@
-== README
+# What's for Dinner?
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Ship it saturday project (Launch Academy hackathon)
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+What's for Dinner is a simple app that lets you search for restaurants in your area. This app was built in a day and was a fun project to practice some front end!
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
